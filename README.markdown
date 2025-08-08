@@ -10,12 +10,13 @@
 
 ## نصب
 1. مخزن را در GitHub خود قرار دهید (https://github.com/mmad261/telegram-bot).
-2. دستور زیر را در سرور اوبونتو اجرا کنید:
+2. کلید SSH را برای کاربر `telegrambot` ایجاد کرده و به GitHub اضافه کنید.
+3. دستور زیر را در سرور اوبونتو اجرا کنید:
    ```bash
    sudo bash -c "$(curl -sL https://raw.githubusercontent.com/mmad261/telegram-bot/main/install.sh)" @ install
    ```
-3. اطلاعات درخواستی (توکن، Owner ID، Channel ID) را وارد کنید.
-4. ربات نصب می‌شود و پنل مدیریت در `/root/botlink/bopanel` قرار می‌گیرد.
+4. اطلاعات درخواستی (توکن، Owner ID، Channel ID) را وارد کنید.
+5. ربات نصب می‌شود و پنل مدیریت در `/root/botlink/bopanel` قرار می‌گیرد.
 
 ## استفاده از پنل مدیریت
 1. به پوشه `/root/botlink` بروید:
@@ -44,7 +45,7 @@ sudo bash -c "$(curl -sL https://raw.githubusercontent.com/mmad261/telegram-bot/
 ## پیش‌نیازها
 - سرور اوبونتو (18.04 یا بالاتر)
 - دسترسی ادمین ربات به کانال تلگرام
-- دسترسی SSH یا توکن GitHub برای مخزن خصوصی
+- کلید SSH برای دسترسی به مخزن خصوصی
 
 ## مجوز
 این پروژه تحت مجوز MIT منتشر شده است. جزئیات را در فایل [LICENSE](LICENSE) ببینید.
