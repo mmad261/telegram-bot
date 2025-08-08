@@ -6,7 +6,7 @@ GREEN='\033[0;32m'
 NC='\033[0m' # بدون رنگ
 
 # متغیرها
-REPO_URL="https://github.com/USERNAME/telegram-bot.git"
+REPO_URL="https://github.com/mmad261/telegram-bot.git"
 INSTALL_DIR="/home/telegrambot/telegram-bot"
 BOT_USER="telegrambot"
 VENV_DIR="$INSTALL_DIR/venv"
@@ -113,7 +113,7 @@ EOF"
   echo -e "${GREEN}نصب با موفقیت انجام شد! ربات در حال اجرا است.${NC}"
   echo "وضعیت سرویس را بررسی کنید: sudo systemctl status $SERVICE_NAME"
   echo "لاگ‌ها را بررسی کنید: tail -f $INSTALL_DIR/bot.log"
-  echo "برای مدیریت ربات، در پوشه $PANEL_DIR دستور 'bopanel' را اجرا کنید."
+  echo "برای مدیریت ربات، به $PANEL_DIR بروید و 'bopanel' را اجرا کنید."
   echo "یا از دستور زیر استفاده کنید:"
   echo "sudo bash -c \"\$(curl -sL $REPO_URL/raw/main/install.sh)\" @ <دستور>"
   echo "دستورات موجود: install, update"
