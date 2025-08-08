@@ -1,0 +1,16 @@
+[Unit]
+Description=Telegram Bot Service
+After=network.target
+
+[Service]
+User=telegrambot
+Group=telegrambot
+WorkingDirectory=/home/telegrambot/telegram-bot
+EnvironmentFile=/home/telegrambot/telegram-bot/.env
+ExecStart=/home/telegrambot/telegram-bot/venv/bin/python bot.py
+Restart=always
+StandardOutput=append:/home/telegrambot/telegram-bot/bot.log
+StandardError=append:/home/telegrambot/telegram-bot/bot_error.log
+
+[Install]
+WantedBy=multi-user.target
