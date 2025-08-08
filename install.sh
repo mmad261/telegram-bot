@@ -6,7 +6,7 @@ GREEN='\033[0;32m'
 NC='\033[0m' # بدون رنگ
 
 # متغیرها
-REPO_URL="https://github.com/mmad261/telegram-bot.git"
+REPO_URL="git@github.com:mmad261/telegram-bot.git"
 INSTALL_DIR="/home/telegrambot/telegram-bot"
 BOT_USER="telegrambot"
 VENV_DIR="$INSTALL_DIR/venv"
@@ -71,7 +71,7 @@ install_bot() {
   if [ -d "$INSTALL_DIR" ]; then
     rm -rf "$INSTALL_DIR"
   fi
-  su - $BOT_USER -c "git clone $REPO_URL $INSTALL_DIR" || error_exit "کلون کردن مخزن شکست خورد. مطمئن شوید دسترسی SSH یا توکن GitHub تنظیم شده است."
+  su - $BOT_USER -c "git clone $REPO_URL $INSTALL_DIR" || error_exit "کلون کردن مخزن شکست خورد. مطمئن شوید دسترسی SSH تنظیم شده است."
 
   # تنظیم محیط مجازی و نصب وابستگی‌ها
   echo "تنظیم محیط مجازی و نصب وابستگی‌ها..."
